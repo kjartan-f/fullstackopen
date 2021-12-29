@@ -1,0 +1,13 @@
+note over browser
+browser executes the event handler on form submit
+Javscript prevents browser dedault behaviour
+Draws new node in browser based on user input
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note Content-Type json
+note over server
+Reads the POST data from the Request body, creates a new object in and adds to Notes array
+end note
+
+server-->browser: HTTP status code 201 message note created
+
