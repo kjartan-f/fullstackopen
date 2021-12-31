@@ -6,7 +6,7 @@ const MostPopular = ({votes,anecdotes}) => {
 
   const max = Math.max(...votes)
   const index = votes.indexOf(max);
-
+  
   return (
     <>
       <h2>Anecdote width most votes</h2>
